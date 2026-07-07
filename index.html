@@ -1883,7 +1883,7 @@ lessons-list{
 }
 
 .lesson-content h3{
-  font-family:var(--font-display);
+  font-family:var(--font-sans);
   font-size:28px;
   line-height:1.05;
   letter-spacing:-0.02em;
@@ -2054,9 +2054,282 @@ margin:48px 0;
   }
 }
 
+/* ── EAPL CRM CASE STUDY EXTENSIONS ───────────────────────────── */
+.eapl-highlight { color:#D86438; }
+.eapl-section-intro { max-width:760px; }
+.eapl-module-grid,
+.eapl-problem-grid,
+.eapl-system-grid,
+.eapl-impact-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+  margin:40px 0 24px;
+}
+.eapl-problem-grid { grid-template-columns:repeat(3,1fr); }
+.eapl-system-grid { grid-template-columns:repeat(3,1fr); }
+.eapl-impact-grid { grid-template-columns:repeat(3,1fr); }
+.eapl-card {
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:28px;
+}
+.eapl-card-num {
+  font-family:var(--font-display);
+  font-size:32px;
+  line-height:1;
+  color:#D86438;
+  margin-bottom:24px;
+}
+.eapl-card h3,
+.eapl-card h4 {
+  font-family:var(--font-sans);
+  font-size:17px;
+  line-height:1.35;
+  margin-bottom:10px;
+  color:var(--text-primary);
+}
+.eapl-card p,
+.eapl-card li {
+  font-size:14px;
+  line-height:1.65;
+  color:var(--text-secondary);
+}
+.eapl-card ul { list-style:none; display:flex; flex-direction:column; gap:8px; margin-top:8px; }
+.eapl-card li::before { content:'→'; color:#2B4FBF; margin-right:8px; }
+.eapl-chip-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+.eapl-chip {
+  font-size:12px;
+  font-weight:600;
+  color:#D86438;
+  background:#FFF8F5;
+  border:1px solid rgba(43,79,191,0.14);
+  border-radius:100px;
+  padding:6px 12px;
+}
+.eapl-chip-2 {
+  font-size:12px;
+  font-weight:600;
+  color:#FFBDA4;
+  background:#FFF3EF;
+  border:1px solid rgba(43,79,191,0.14);
+  border-radius:100px;
+  padding:6px 12px;
+}
+.eapl-screen-row {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:16px;
+  margin:36px 0 16px;
+}
+.eapl-screen-card {
+  background:var(--bg-white);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  min-height:210px;
+}
+.eapl-screen-preview {
+  height:118px;
+  background:linear-gradient(135deg,#F8FAFC 0%,#EEF2FF 100%);
+  border-bottom:1px solid var(--border);
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.eapl-screen-stack {
+  display:flex;
+  flex-direction:column;
+  gap:48px;
+  margin:48px 0 32px;
+}
+.eapl-screen-copy h4 {
+  font-size:18px;
+  line-height:1.35;
+  letter-spacing:-0.01em;
+  margin-bottom:10px;
+}
+.eapl-screen-copy p {
+  font-size:14px;
+  color:var(--text-secondary);
+  line-height:1.65;
+}
+.eapl-screen-shot {
+  width: 100%;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(20,20,16,0.08);
+}
+
+.eapl-screen-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.eapl-screen-placeholder {
+  aspect-ratio:16/9;
+  min-height:420px;
+  background:linear-gradient(135deg,#F8FAFC 0%,#EEF2FF 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:rgba(20,20,16,0.24);
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:32px;
+  letter-spacing:-0.02em;
+}
+.eapl-ui-line { height:8px; background:rgba(20,20,16,0.10); border-radius:100px; }
+.eapl-ui-line.short { width:48%; }
+.eapl-ui-line.medium { width:72%; }
+.eapl-ui-table { display:grid; grid-template-columns:1.2fr 0.8fr 0.7fr; gap:5px; margin-top:4px; }
+.eapl-ui-cell { height:7px; background:rgba(43,79,191,0.14); border-radius:4px; }
+.eapl-screen-body { padding:16px; }
+.eapl-screen-body h4 { font-size:14px; margin-bottom:6px; line-height:1.35; }
+.eapl-screen-body p { font-size:12px; color:var(--text-secondary); line-height:1.55; }
+.eapl-pattern-list { display:grid; grid-template-columns:1fr; gap:10px; margin-top:18px; }
+.eapl-pattern-item {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 14px;
+  border-radius:12px;
+  background:var(--bg-white);
+  border:1px solid var(--border);
+  font-size:13px;
+  color:var(--text-secondary);
+}
+.eapl-wide-card {
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:var(--radius-lg);
+  padding:36px;
+  margin:40px 0;
+}
+.eapl-screen-full {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.eapl-screen-copy {
+  position: static;
+  max-width: 620px;
+  margin-bottom: 24px;
+  padding-top: 0;
+}
+.eapl-screen-kicker {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:#EEF2FF;
+  color:#2B4FBF;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:14px;
+}
+.eapl-cover-note {
+  position:absolute;
+  left:28px;
+  bottom:28px;
+  background:rgba(250,250,248,0.88);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:12px 16px;
+  font-size:13px;
+  color:var(--text-secondary);
+  backdrop-filter:blur(10px);
+}
+.cs-cover.eapl-cover { position:relative; background:#D8DDE8; }
+.cs-cover.eapl-cover .cs-cover-image { object-fit:cover; }
+@media(max-width:900px){
+  .eapl-module-grid,.eapl-problem-grid,.eapl-system-grid,.eapl-impact-grid { grid-template-columns:1fr; }
+  .eapl-screen-row { grid-template-columns:1fr; }
+}
+
+.ds-strip-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 48px;
+  background: transparent;
+}
+
+.ds-strip-marquee::before,
+.ds-strip-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ds-strip-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #f7f5f1, transparent);
+}
+
+.ds-strip-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #f7f5f1, transparent);
+}
+
+.ds-strip-track {
+  display: flex;
+  width: max-content;
+  animation: dsStripScroll 45s linear infinite;
+}
+
+.ds-strip-track img {
+  width: auto;
+  height: 620px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.ds-strip-marquee:hover .ds-strip-track {
+  animation-play-state: paused;
+}
+
+@keyframes dsStripScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .ds-strip-marquee {
+    margin-top: 32px;
+  }
+
+  .ds-strip-marquee::before,
+  .ds-strip-marquee::after {
+    width: 60px;
+  }
+
+  .ds-strip-track img {
+    height: 360px;
+  }
+
+  .ds-strip-track {
+    animation-duration: 2s;
+  }
+}
 
 </style>
-  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-595RLS0W2D"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -2280,21 +2553,24 @@ margin:48px 0;
         </a>
 
         <!-- Project 3: CRM -->
-        <div class="project-card fade-in" style="cursor:default; position:relative;">
-          <div class="coming-soon-badge">Coming soon</div>
+        <a class="project-card fade-in" onclick="showPage('case-study-3'); return false;" href="#">
           <div class="project-image-wrap bg-slate">
               <img 
   src="work/home_page_3.png" 
-  alt="Project Mockup"
+  alt="EAPL Admin CRM Mockup"
   class="project-image"
    />
+
           </div>
           <div class="project-info">
             <h3 class="project-title">Designing a scalable CRM experience for complex workflows</h3>
             <p class="project-desc">Simplifying how enterprise teams manage customer records, dealer visits, administrative workflows, pricing programs, and operational requests designing a intuitive and scalable experience.</p>
             <div class="project-tag-cta-row">
               <span class="project-tag tag-saas">Enterprise SaaS · Web</span>
-              <span class="project-cta" style="color: var(--text-muted);">Case Study In Progress</span>
+              <span class="project-cta">
+                View Case Study
+                <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
             </div>
             <div class="project-metric">
               <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M9 11.5 H14 M11.5 9 V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -2304,8 +2580,8 @@ margin:48px 0;
               </div>
             </div>
           </div>
-        </div>
-
+        
+       </a>
       </div>
     </div>
   </div>
@@ -2412,7 +2688,7 @@ margin:48px 0;
   <div class="cs-hero">
     <div class="container">
       <button class="cs-back" onclick="showPage('home')">
-        ← Back to work
+        ← Back
       </button>
       <p class="cs-label">Healthcare · iOS + Android</p>
       <h1 class="cs-title">Designing trust for doctors in a <span class="highlight-1">home healthcare marketplace</span></h1>
@@ -2608,7 +2884,7 @@ margin:48px 0;
           <h4 class="cs-col-head problems">Problems</h4>
           <ul class="cs-bullet-list" data-anim>
             <li>Heavy traffic in Gurugram frequently caused delays, creating friction for doctors.</li>
-            <li>Patients cancelled instead of waiting without clarity/li>
+            <li>Patients cancelled instead of waiting without clarity.</li>
           </ul>
         </div>
         <div class="cs-col">
@@ -2707,13 +2983,355 @@ margin:48px 0;
 
 </div><!-- /case-study-1 -->
 
+<!-- ═══════════════════════════════════════════════════ CASE STUDY 3 -->
+<div id="case-study-3-page" class="page">
+
+  <div class="cs-hero">
+    <div class="container">
+      <button class="cs-back" onclick="showPage('home')">
+        ← Back
+      </button>
+      <p class="cs-label">Enterprise SaaS · Web CRM</p>
+      <h1 class="cs-title">Designing a scalable CRM for <span class="eapl-highlight">dealer, distributor, and sales operations</span></h1>
+      <p class="cs-summary">A centralized admin platform built to help EAPL teams manage channel partners, field operations, commercial rules, orders, points, and master data with clarity and control.</p>
+      <div class="cs-meta-row">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">My Role</span>
+          <span class="cs-meta-value">Product Designer</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Platform</span>
+          <span class="cs-meta-value">Web Admin Dashboard</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Type</span>
+          <span class="cs-meta-value">0→1 Enterprise SaaS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cs-cover eapl-cover" data-anim>
+      <img 
+        src="eapl-crm/cover_eapl_crm.jpg"
+        alt="EAPL Admin CRM"
+        class="cs-cover-image"
+      />
+      
+    </div>
+  </div>
+
+  <div class="cs-body">
+    <div class="container">
+
+      <div class="cs-section-label">Product context</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">A CRM built for complex channel operations</h2>
+      <p class="cs-text eapl-section-intro" data-anim>EAPL Admin CRM was designed as a centralized system for teams managing dealer and distributor data, field visits, price lists, schemes, MOQ rules, order placement, points earned, feedback forms, product vendors, categories, and master data.</p>
+
+      <div class="eapl-problem-grid" data-anim-group>
+        <div class="eapl-card">
+          <div class="eapl-card-num">01</div>
+          <h3>Connected partner data</h3>
+          <p>Dealers, distributors, regions, divisions, departments, visits, orders, and points needed to stay connected instead of living as isolated records.</p>
+        </div>
+        <div class="eapl-card">
+          <div class="eapl-card-num">02</div>
+          <h3>Dense admin workflows</h3>
+          <p>Admins had to create, edit, map, review, filter, and manage large volumes of operational data with accuracy.</p>
+        </div>
+        <div class="eapl-card">
+          <div class="eapl-card-num">03</div>
+          <h3>Scalable UI patterns</h3>
+          <p>Repeated tables, forms, filters, statuses, modals, and detail views needed a reusable design system instead of one-off screens.</p>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Product architecture</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">Breaking the CRM into clear modules</h2>
+      <p class="cs-text eapl-section-intro" data-anim>Instead of exposing every feature at the same level, I grouped the CRM into four functional areas so users could quickly understand where to manage data, where to configure rules, and where to track business activity.</p>
+
+      <div class="eapl-module-grid" data-anim-group>
+        <div class="eapl-card">
+          <div class="eapl-card-num">01</div>
+          <h3>Partner Management</h3>
+          <p>Dealers, distributors, associations, regions, divisions, and departments.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip">Core workflow</span></div>
+        </div>
+        <div class="eapl-card">
+          <div class="eapl-card-num">02</div>
+          <h3>Commercial Rules</h3>
+          <p>Schemes, price lists, MOQ rules, scheme details, and order conditions.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip">Core workflow</span></div>
+        </div>
+        <div class="eapl-card">
+          <div class="eapl-card-num">03</div>
+          <h3>Field Operations</h3>
+          <p>Dealer visits, travel reports, feedback forms, and regional activity.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip-2">Ecosystem module</span></div>
+        </div>
+        <div class="eapl-card">
+          <div class="eapl-card-num">04</div>
+          <h3>Orders & Performance</h3>
+          <p>Order placement, points earned, dealer activity, and performance tracking.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip-2">Ecosystem module</span></div>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Design system strategy</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">Creating a system before designing screens</h2>
+      <p class="cs-text eapl-section-intro" data-anim>Because the CRM had repeated table-heavy, form-heavy, and rule-based workflows, I defined reusable components and page patterns that could scale across modules without creating inconsistency.</p>
+
+      
+<div class="ds-strip-marquee">
+  <div class="ds-strip-track">
+    <img 
+      src="eapl-crm/design-system-image.png" 
+      alt="EAPL design system and pattern library overview" 
+    />
+
+    <img 
+      src="eapl-crm/design-system-image.png"
+      alt="EAPL design system and pattern library overview" 
+      aria-hidden="true"
+    />
+  </div>
+</div>
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Workflow 01</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">Helping admins manage dealer and distributor networks</h2>
+      <p class="cs-text eapl-section-intro" data-anim>Partner management became the base workflow of the CRM. The goal was to help admins quickly search partner records, understand associations, update details, and connect dealers with distributors, regions, and divisions.</p>
+
+      <div class="eapl-screen-stack" data-anim-group>
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">01</span>
+            <h4>Distributor Records</h4>
+            <p>A centralized listing view that helps admins search, filter, compare, import, export, and manage distributor records from one place.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/distributor-list.png" alt="EAPL CRM distributor listing screen">
+          </figure>
+        </div>
+
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">02</span>
+            <h4>Distributor Profile</h4>
+            <p>Profile gives admins a complete view of one distributor without making them jump across multiple pages.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/distributor-profile.png" alt="EAPL CRM advanced partner filters screen">
+          </figure>
+        </div>
+
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">03</span>
+            <h4>Reward Ledger</h4>
+            <p>A transaction-level view of reward point activity, designed to help track point credits, debits, and the business events behind each reward entry.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/reward.png" alt="EAPL CRM reward screen">
+          </figure>
+        </div>
+<div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">04</span>
+            <h4>Dealer Mapping</h4>
+            <p>This screen solves the problem of unclear distributor-dealer relationships by giving admins one place to see all associated dealers and update mappings when required.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/associated-dealers.png" alt="EAPL CRM dealer distributor association mapping screen">
+          </figure>
+        </div>
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">05</span>
+            <h4>Associate/ Edit Dealer</h4>
+            <p>This flow helps associate a new dealer with a distributor while also updating dealer information in the same experience.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/edit-associate-dealer.png" alt="EAPL CRM add or edit partner screen">
+          </figure>
+        </div>
+
+      
+      </div>
+
+
+      <div class="cs-two-col" data-anim>
+        <div class="cs-col">
+          <h4 class="cs-col-head problems">Problem</h4>
+          <ul class="cs-bullet-list">
+            <li>Partner data was dense and connected to many other workflows.</li>
+            <li>Admins needed quick scanning without opening every record.</li>
+            <li>Dealer-distributor relationships needed clearer visibility.</li>
+          </ul>
+        </div>
+        <div class="cs-col">
+          <h4 class="cs-col-head solutions">Design decisions</h4>
+          <ul class="cs-bullet-list">
+            <li>Used a table-first flow for faster record scanning.</li>
+            <li>Grouped details into tabs instead of long pages.</li>
+            <li>Added contextual actions for mapping, editing, and reviewing activity.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Workflow 02</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">Simplifying MOQ rule creation</h2>
+      <p class="cs-text eapl-section-intro" data-anim>A structured rule creation screen that helps configure minimum order quantity conditions across plant, product category, distance, amount, weight, and step based delivery rules.</p>
+
+      <div class="eapl-screen-stack" data-anim-group>
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">01</span>
+            <h4>MOQ Rule Listing</h4>
+            <p>It helps teams quickly understand which rules exist, which product categories or plants they apply to, and whether any rule needs to be edited, reviewed or updated.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/moq-list.png" alt="EAPL CRM scheme listing screen">
+          </figure>
+        </div>
+
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">02</span>
+            <h4>MOQ Rule Configuration</h4>
+            <p>Define MOQ rules through a structured form and lets admins save progress as a draft before publishing</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/moq-configuration.png" alt="EAPL CRM MOQ rule configuration screen">
+          </figure>
+        </div>
+
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">03</span>
+            <h4>Reviewing Rules</h4>
+            <p>Detail view that helps admins review MOQ conditions, monitor usage, track audit history, and take quick actions from one place</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/moq-detail.png" alt="EAPL CRM MOQ rule detail screen">
+          </figure>
+        </div>
+</div>
+
+      <div class="cs-two-col" data-anim>
+        <div class="cs-col">
+          <h4 class="cs-col-head problems">Problem</h4>
+          <ul class="cs-bullet-list">
+            <li>Admins needed a simple way to configure rules, review conditions, and feel confident before creating an active MOQ rule.</li>
+            <li>MOQ rule setup involved multiple operational conditions like product category, plant, warehouse type, distance range, and weight range.</li>
+            <li>Admins needed confidence before publishing active schemes.</li>
+          </ul>
+        </div>
+        <div class="cs-col">
+          <h4 class="cs-col-head solutions">Design decisions</h4>
+          <ul class="cs-bullet-list">
+            <li>Designed MOQ rule creation as a structured single-page form.</li>
+            <li>Grouped inputs into clear sections: basic rule information, warehouse rule slabs and notes.</li>
+            <li>Added a rule summary card so admins could review selected category, plants, warehouse type, and number of slabs before saving.</li>
+            <li>Added Save as Draft, Discard, and Create Rule actions to support both incomplete setup and final publishing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Wider product ecosystem</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">Extending the same system across field operations and performance tracking</h2>
+      <p class="cs-text eapl-section-intro" data-anim>The remaining CRM modules followed the same design system logic, so the product could scale without introducing new interaction patterns for every business area.</p>
+
+      <div class="cs-two-col" data-anim>
+        <div class="eapl-card">
+          <h3>Field Operations</h3>
+          <p>Visits, travel reports, feedback forms, salesperson activity, and region-wise visibility.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip">Visits</span><span class="eapl-chip">Travel reports</span><span class="eapl-chip">Feedback forms</span></div>
+        </div>
+        <div class="eapl-card">
+          <h3>Orders & Performance</h3>
+          <p>Order placement, order status tracking, points earned, dealer-wise performance, and reward activity.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip">Orders</span><span class="eapl-chip">Points</span><span class="eapl-chip">Performance</span></div>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Impact</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">A scalable foundation for enterprise CRM workflows</h2>
+      <div class="cs-metrics" data-anim-group>
+        <div class="cs-metric">
+          <div class="cs-metric-num">4</div>
+          <div class="cs-metric-label">Core product areas structured</div>
+        </div>
+        <div class="cs-metric">
+          <div class="cs-metric-num">15+</div>
+          <div class="cs-metric-label">Reusable UI patterns defined</div>
+        </div>
+        <div class="cs-metric">
+          <div class="cs-metric-num">1</div>
+          <div class="cs-metric-label">Unified admin system for sales operations</div>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Key learnings</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">What I learned</h2>
+      <div class="lessons-list">
+        <div class="lesson-item">
+          <img src="eapl-crm/structure.png" class="lesson-icon" alt="">
+          <div class="lesson-content">
+            <h3>Dense workflows need clarity at every step</h3>
+            <p>Even small admin actions can affect multiple workflows, so I learned to structure information clearly, use familiar patterns, and make each next step easy to understand.</p>
+          </div>
+        </div>
+        <div class="lesson-item">
+          <img src="eapl-crm/design-system.png" class="lesson-icon" alt="">
+          <div class="lesson-content">
+            <h3>Enterprise tools are more about reducing doubt than adding features</h3>
+            <p>While working on EAPL, I realized that admins want to know exactly what they are changing, what the change will affect, and whether they are making the right decision. Small details like summaries, clear labels, status states, and review sections helped create that confidence.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#" onclick="showPage('home')" style="display:flex;align-items:center;text-decoration:none;">
+          <img src="harshita_logo.png" alt="Harshita Chauhan" style="height:16px;width:auto;opacity:0.45;display:block;">
+        </a>
+        <span class="footer-copy">© 2025 — Designed with intention.</span>
+        <ul class="footer-links">
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('home'); setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100)">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /case-study-3 -->
+
+
 <!-- ═══════════════════════════════════════════════════ CASE STUDY 2 -->
 <div id="case-study-2-page" class="page">
 
   <div class="cs-hero">
     <div class="container">
       <button class="cs-back" onclick="showPage('home')">
-        ← Back to work
+        ← Back
       </button>
       <p class="cs-label">Healthcare · iOS + Android</p>
       <h1 class="cs-title">Gamifying healthcare to build lasting health habits</h1>
@@ -2806,7 +3424,7 @@ margin:48px 0;
 
   <div style="border-top: 1px solid var(--border); padding: 80px 0; text-align:center;">
     <div class="container">
-      <p class="section-label" style="text-align:center; margin-bottom:24px;">Back to work</p>
+      <p class="section-label" style="text-align:center; margin-bottom:24px;">Back</p>
       <a class="btn-secondary" onclick="showPage('home')" href="#">← View all projects</a>
     </div>
   </div>
@@ -2839,7 +3457,7 @@ margin:48px 0;
 
   localStorage.setItem('activePage', page);
 
-  window.scrollTo(0, 0);
+  resetScrollTop();
 
   initIntersection();
   }
@@ -2957,9 +3575,10 @@ if (savedPage) {
 
   const pageEl = document.getElementById(savedPage + '-page');
 
-  if (pageEl) {
-    pageEl.classList.add('active');
-  }
+if (pageEl) {
+  pageEl.classList.add('active');
+  resetScrollTop();
+}
 }
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
