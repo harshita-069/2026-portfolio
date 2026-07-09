@@ -21,7 +21,7 @@
     --text-muted: #9B9B90;
     --border: rgba(20,20,16,0.10);
     --border-strong: rgba(20,20,16,0.18);
-    --accent: #2A5C45;
+    --accent: #8B4513;
     --accent-light: #EEF5F1;
     --tag-bg: rgba(20,20,16,0.07);
     --radius-sm: 6px;
@@ -713,7 +713,7 @@ margin-top: 48px;
     cursor: pointer;
     text-decoration: none;
     color: var(--text-primary);
-    background: var(--bg-card);
+    background: #FFFFFF;
     border: 1px solid var(--border);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     display: block;
@@ -722,7 +722,7 @@ margin-top: 48px;
  .project-card:hover {
   transform: none;
   box-shadow: 0 24px 60px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04);
-  background: var(--bg-card);
+  background: #FFFFFF;
 }
 
 
@@ -862,60 +862,49 @@ padding-bottom: 28px;
   .project-info-spacer { flex: 1; min-height: 20px; }
 
   /* ── Bottom metric bar ───────────────────────────── */
-  .project-bottom {
-    margin-top: 28px;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 16px;
-  }
+  .project-metric {
+  margin-top: 28px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: #F7F3EE;
+  
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(20, 20, 16, 0.04);
+}
 
-  .project-metric-block {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+ .project-metric-img {
+  width: 38px;
+  height: 38px;
+  padding: 9px;
+  border-radius: 12px;
+  background: #EEF5F1;
+  object-fit: contain;
+  flex-shrink: 0;
+}
 
-  .project-metric-stat {
-    display: flex;
-    align-items: baseline;
-    gap: 6px;
-  }
+.project-metric-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
 
-  .project-metric-num {
-    font-family: var(--font-display);
-    font-size: clamp(28px, 3vw, 40px);
-    line-height: 1;
-    letter-spacing: -0.03em;
-    color: var(--text-primary);
-    font-weight: 400;
-  }
+.project-metric-number {
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 1;
+  color: var(--text-primary);
+}
 
-  .project-metric-label {
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--text-muted);
-    letter-spacing: 0.01em;
-    max-width: 160px;
-    line-height: 1.4;
-  }
+.project-metric-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
 
-  .project-metric-icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .project-metric-icon svg { width: 16px; height: 16px; }
-
-  .icon-health { background: #D6F0E4; color: #1A6B47; }
-  .icon-saas   { background: #DDE5FF; color: #2B4FBF; }
-  .icon-consumer { background: #FFE9D5; color: #8B3A00; }
 
   .project-cta {
     display: inline-flex;
@@ -950,67 +939,7 @@ padding-bottom: 28px;
     padding: 4px 12px;
   }
 
-  /* ── PROJECT METRIC PILL (chip — kept for case study pages) ── */
-  .project-metric {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 14px;
-    margin-bottom: 0;
-    margin-top: 16px;
-    letter-spacing: 0.01em;
-    background: var(--accent-light);
-    border: 1px solid rgba(42,92,69,0.18);
-    border-radius: 12px;
-    width: 100%;
-    box-sizing: border-box;
-  }
   
-  /* Metric positioned at bottom with more prominence */
-  .project-info .project-metric:last-of-type {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 14px;
-    margin-bottom: 0;
-    margin-top: 16px;
-    border-radius: 12px;
-    background: var(--accent-light);
-    border: 1px solid rgba(42,92,69,0.18);
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .project-metric svg { 
-    width: 40px; 
-    height: 40px;
-    flex-shrink: 0; 
-    color: var(--accent);
-    stroke-width: 1.5;
-  }
-  
-  .project-metric-content {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    flex: 1;
-  }
-  
-  .project-metric-number {
-    font-family: var(--font-display);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.1;
-    color: var(--accent);
-    letter-spacing: -0.02em;
-  }
-  
-  .project-metric-label {
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--text-secondary);
-    line-height: 1.4;
-  }
 
   /* ── ABOUT ───────────────────────────────────────── */
   .about-section {
@@ -1534,27 +1463,7 @@ padding-bottom: 28px;
   /* Life outside work — interest grid */
   
 
-  /* ── PROJECT METRIC PILL ─────────────────────────── */
-  .project-metric {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--accent);
-    background: var(--accent-light);
-    border: 1px solid rgba(42,92,69,0.18);
-    border-radius: 100px;
-    padding: 5px 13px 5px 10px;
-    margin-bottom: 18px;
-    letter-spacing: 0.01em;
-  }
-  .project-metric svg {
-    width: 13px;
-    height: 13px;
-    flex-shrink: 0;
-  }
-
+  
   /* ── ANIMATIONS ──────────────────────────────────── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
@@ -2511,10 +2420,10 @@ margin:48px 0;
               </span>
             </div>
             <div class="project-metric">
-              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 10 L6 6 L9 9 L14 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 3 H14 V6"      stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <!-- <img src="icons/growth.png" alt="" class="project-metric-img"> -->
               <div class="project-metric-content">
                 <div class="project-metric-number">91%</div>
-                <div class="project-metric-label">patient satisfaction</div>
+                <div class="project-metric-label">Patient Satisfaction</div>
               </div>
             </div>
           </div>
@@ -2543,10 +2452,11 @@ margin:48px 0;
               </span>
             </div>
             <div class="project-metric">
-              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 13.5 C8 13.5 2 9.5 2 5.5 C2 3.5 3.5 2 5.5 2 C6.8 2 7.9 2.7 8 3 C8.1 2.7 9.2 2 10.5 2 C12.5 2 14 3.5 14 5.5 C14 9.5 8 13.5 8 13.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <!-- <img src="icons/growth.png" alt="" class="project-metric-img"> -->
+
               <div class="project-metric-content">
-                <div class="project-metric-number">3×</div>
-                <div class="project-metric-label">engagement lift</div>
+                <div class="project-metric-number">3X</div>
+                <div class="project-metric-label">Engagement lift</div>
               </div>
             </div>
           </div>
@@ -2573,10 +2483,11 @@ margin:48px 0;
               </span>
             </div>
             <div class="project-metric">
-              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M9 11.5 H14 M11.5 9 V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <!-- <img src="icons/growth.png" alt="" class="project-metric-img"> -->
+
               <div class="project-metric-content">
                 <div class="project-metric-number">40%</div>
-                <div class="project-metric-label">faster task resolution</div>
+                <div class="project-metric-label">faster Task Resolution</div>
               </div>
             </div>
           </div>
@@ -2952,7 +2863,7 @@ margin:48px 0;
   </div>
 
   <div class="lesson-item">
-    <img src="featured_case_study/trust.png" class="lesson-icon" alt="">
+    <img src="featured_case_study/Trust.png" class="lesson-icon" alt="">
     <div class="lesson-content">
       <h3>Trust Through Transparency</h3>
       <p>In on-demand healthcare, trust isn't an emotion; it’s a system state. By using GPS-Selfie, I learned that you can engineer security into a platform. If you remove the "human choice" from high-risk moments (like starting a recording), you remove the "human error" that breaks trust.</p>
