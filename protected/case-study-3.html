@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>EAPL CRM — Case Study | Harshita Chauhan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-595RLS0W2D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-595RLS0W2D');
+</script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════ NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <div class="nav-left-group">
+      <a href="index.html" class="nav-logo" style="display:flex;align-items:center;">
+        <img src="harshita_logo.png" alt="Harshita Chauhan" style="height:18px;width:auto;display:block;opacity:0.85;">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=meharshitachauhan@gmail.com"
+   target="_blank" class="btn-say-hello">Say Hello 👋</a>
+      <a href="Harshita_Product_Designer.pdf" download="Harshita_Product_Designer.pdf" class="btn-resume">Resume</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMobile()">Home</a>
+  <a href="index.html#work" onclick="closeMobile()">Work</a>
+  <a href="index.html#about" onclick="closeMobile()">About</a>
+  <a href="index.html#life" onclick="closeMobile()">Life</a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=meharshitachauhan@gmail.com"
+   target="_blank" onclick="closeMobile()">Contact</a>
+  <a href="Harshita_Product_Designer.pdf"
+   download="Harshita_Product_Designer.pdf"; closeMobile()">Download Resume</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════ CASE STUDY 3 -->
+<main id="case-study-3-page">
+
+  <div class="cs-hero">
+    <div class="container">
+      <button class="cs-back" onclick="window.location.href='index.html'">
+        ← Back
+      </button>
+      <p class="cs-label">Enterprise SaaS · Web CRM</p>
+      <h1 class="cs-title">Designing a scalable CRM for <span class="eapl-highlight">dealer, distributor, and sales operations</span></h1>
+      <p class="cs-summary">A centralized admin platform built to help EAPL teams manage channel partners, field operations, commercial rules, orders, points, and master data with clarity and control.</p>
+      <div class="cs-meta-row">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">My Role</span>
+          <span class="cs-meta-value">Product Designer</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Platform</span>
+          <span class="cs-meta-value">Web Admin Dashboard</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Type</span>
+          <span class="cs-meta-value">0→1 Enterprise SaaS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cs-cover eapl-cover" data-anim>
+      <img 
+        src="eapl-crm/cover_eapl_crm.jpg"
+        alt="EAPL Admin CRM"
+        class="cs-cover-image"
+      />
+      
+    </div>
+  </div>
+
+  <div class="cs-body">
+    <div class="container">
+
+      <div class="cs-section-label">Product context</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">A CRM built for complex channel operations</h2>
+      <p class="cs-text eapl-section-intro" data-anim>EAPL Admin CRM was designed as a centralized system for teams managing dealer and distributor data, field visits, price lists, schemes, MOQ rules, order placement, points earned, feedback forms, product vendors, categories, and master data.</p>
+
+      <div class="eapl-problem-grid" data-anim-group>
+        <div class="eapl-card">
+          <div class="eapl-card-num">01</div>
+          <h3>Scattered business data</h3>
+          <p>Information was spread across multiple platforms, making it difficult for teams to access consistent and reliable data from one place.</p>
+        </div>
+        <div class="eapl-card">
+          <div class="eapl-card-num">02</div>
+          <h3>Disconnected partner relationships</h3>
+          <p>Dealers, distributors, regions, divisions, and departments were not centrally managed, making partner relationships difficult to track and maintain.</p>
+        </div>
+        <div class="eapl-card">
+          <div class="eapl-card-num">03</div>
+          <h3>Complex business rules</h3>
+          <p>Many business rules were hardcoded, making updates time-consuming and increasing the effort required to maintain the platform.</p>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Product architecture</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">Breaking the CRM into clear modules</h2>
+      <p class="cs-text eapl-section-intro" data-anim>Instead of exposing every feature at the same level, I grouped the CRM into four functional areas so users could quickly understand where to manage data, where to configure rules, and where to track business activity.</p>
+
+      <div class="eapl-module-grid" data-anim-group>
+        <div class="eapl-card">
+          <div class="eapl-card-num">01</div>
+          <h3>Partner Management</h3>
+          <p>Dealers, distributors, associations, regions, divisions, and departments.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip">Core workflow</span></div>
+        </div>
+        <div class="eapl-card">
+          <div class="eapl-card-num">02</div>
+          <h3>Commercial Rules</h3>
+          <p>Schemes, price lists, MOQ rules, scheme details, and order conditions.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip">Core workflow</span></div>
+        </div>
+        <div class="eapl-card">
+          <div class="eapl-card-num">03</div>
+          <h3>Field Operations</h3>
+          <p>Dealer visits, travel reports, feedback forms, and regional activity.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip-2">Ecosystem module</span></div>
+        </div>
+        <div class="eapl-card">
+          <div class="eapl-card-num">04</div>
+          <h3>Orders & Performance</h3>
+          <p>Order placement, points earned, dealer activity, and performance tracking.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip-2">Ecosystem module</span></div>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Design system strategy</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">Creating a system before designing screens</h2>
+      <p class="cs-text eapl-section-intro" data-anim>Because the CRM had repeated table-heavy, form-heavy, and rule-based workflows, I defined reusable components and page patterns that could scale across modules without creating inconsistency.</p>
+
+      
+<div class="ds-strip-marquee">
+  <div class="ds-strip-track">
+    <img 
+      src="eapl-crm/design-system-image.png" 
+      alt="EAPL design system and pattern library overview" 
+    />
+
+    <img 
+      src="eapl-crm/design-system-image.png"
+      alt="EAPL design system and pattern library overview" 
+      aria-hidden="true"
+    />
+  </div>
+</div>
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Workflow 01</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">Helping admins manage dealer and distributor networks</h2>
+      <p class="cs-text eapl-section-intro" data-anim>Partner management became the base workflow of the CRM. The goal was to help admins quickly search partner records, understand associations, update details, and connect dealers with distributors, regions, and divisions.</p>
+
+      <div class="eapl-screen-stack" data-anim-group>
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">01</span>
+            <h4>Distributor Records</h4>
+            <p>A centralized listing view that helps admins search, filter, compare, import, export, and manage distributor records from one place.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/distributor-list.png" alt="EAPL CRM distributor listing screen">
+          </figure>
+        </div>
+
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">02</span>
+            <h4>Distributor Profile</h4>
+            <p>Profile gives admins a complete view of one distributor without making them jump across multiple pages.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/distributor-profile.png" alt="EAPL CRM advanced partner filters screen">
+          </figure>
+        </div>
+
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">03</span>
+            <h4>Reward Ledger</h4>
+            <p>A transaction-level view of reward point activity, designed to help track point credits, debits, and the business events behind each reward entry.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/reward.png" alt="EAPL CRM reward screen">
+          </figure>
+        </div>
+<div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">04</span>
+            <h4>Dealer Mapping</h4>
+            <p>This screen solves the problem of unclear distributor-dealer relationships by giving admins one place to see all associated dealers and update mappings when required.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/associated-dealers.png" alt="EAPL CRM dealer distributor association mapping screen">
+          </figure>
+        </div>
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">05</span>
+            <h4>Associate/ Edit Dealer</h4>
+            <p>This flow helps associate a new dealer with a distributor while also updating dealer information in the same experience.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/edit-associate-dealer.png" alt="EAPL CRM add or edit partner screen">
+          </figure>
+        </div>
+
+      
+      </div>
+
+
+      <div class="cs-two-col" data-anim>
+        <div class="cs-col">
+          <h4 class="cs-col-head problems">Problem</h4>
+          <ul class="cs-bullet-list">
+            <li>Partner data was dense and connected to many other workflows.</li>
+            <li>Admins needed quick scanning without opening every record.</li>
+            <li>Dealer-distributor relationships needed clearer visibility.</li>
+          </ul>
+        </div>
+        <div class="cs-col">
+          <h4 class="cs-col-head solutions">Design decisions</h4>
+          <ul class="cs-bullet-list">
+            <li>Used a table-first flow for faster record scanning.</li>
+            <li>Grouped details into tabs instead of long pages.</li>
+            <li>Added contextual actions for mapping, editing, and reviewing activity.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Workflow 02</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">Simplifying MOQ rule creation</h2>
+      <p class="cs-text eapl-section-intro" data-anim>A structured rule creation screen that helps configure minimum order quantity conditions across plant, product category, distance, amount, weight, and step based delivery rules.</p>
+
+      <div class="eapl-screen-stack" data-anim-group>
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">01</span>
+            <h4>MOQ Rule Listing</h4>
+            <p>It helps teams quickly understand which rules exist, which product categories or plants they apply to, and whether any rule needs to be edited, reviewed or updated.</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/moq-list.png" alt="EAPL CRM scheme listing screen">
+          </figure>
+        </div>
+
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">02</span>
+            <h4>MOQ Rule Configuration</h4>
+            <p>Define MOQ rules through a structured form and lets admins save progress as a draft before publishing</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/moq-configuration.png" alt="EAPL CRM MOQ rule configuration screen">
+          </figure>
+        </div>
+
+        <div class="eapl-screen-full" data-anim>
+          <div class="eapl-screen-copy">
+            <span class="eapl-screen-kicker">03</span>
+            <h4>Reviewing Rules</h4>
+            <p>Detail view that helps admins review MOQ conditions, monitor usage, track audit history, and take quick actions from one place</p>
+          </div>
+          <figure class="eapl-screen-shot">
+            <img src="eapl-crm/moq-detail.png" alt="EAPL CRM MOQ rule detail screen">
+          </figure>
+        </div>
+</div>
+
+      <div class="cs-two-col" data-anim>
+        <div class="cs-col">
+          <h4 class="cs-col-head problems">Problem</h4>
+          <ul class="cs-bullet-list">
+            <li>Admins needed a simple way to configure rules, review conditions, and feel confident before creating an active MOQ rule.</li>
+            <li>MOQ rule setup involved multiple operational conditions like product category, plant, warehouse type, distance range, and weight range.</li>
+            <li>Admins needed confidence before publishing active schemes.</li>
+          </ul>
+        </div>
+        <div class="cs-col">
+          <h4 class="cs-col-head solutions">Design decisions</h4>
+          <ul class="cs-bullet-list">
+            <li>Designed MOQ rule creation as a structured single-page form.</li>
+            <li>Grouped inputs into clear sections: basic rule information, warehouse rule slabs and notes.</li>
+            <li>Added a rule summary card so admins could review selected category, plants, warehouse type, and number of slabs before saving.</li>
+            <li>Added Save as Draft, Discard, and Create Rule actions to support both incomplete setup and final publishing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Wider product ecosystem</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">Extending the same system across field operations and performance tracking</h2>
+      <p class="cs-text eapl-section-intro" data-anim>The remaining CRM modules followed the same design system logic, so the product could scale without introducing new interaction patterns for every business area.</p>
+
+      <div class="cs-two-col" data-anim>
+        <div class="eapl-card">
+          <h3>Field Operations</h3>
+          <p>Visits, travel reports, feedback forms, salesperson activity, and region-wise visibility.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip">Visits</span><span class="eapl-chip">Travel reports</span><span class="eapl-chip">Feedback forms</span></div>
+        </div>
+        <div class="eapl-card">
+          <h3>Orders & Performance</h3>
+          <p>Order placement, order status tracking, points earned, dealer-wise performance, and reward activity.</p>
+          <div class="eapl-chip-row"><span class="eapl-chip">Orders</span><span class="eapl-chip">Points</span><span class="eapl-chip">Performance</span></div>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Impact</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">A scalable foundation for enterprise CRM workflows</h2>
+      <div class="cs-metrics" data-anim-group>
+        <div class="cs-metric">
+          <div class="cs-metric-num">12+</div>
+          <div class="cs-metric-label">Core modules structured</div>
+        </div>
+        <div class="cs-metric">
+          <div class="cs-metric-num">15+</div>
+          <div class="cs-metric-label">Reusable UI patterns defined</div>
+        </div>
+        <div class="cs-metric">
+          <div class="cs-metric-num">1</div>
+          <div class="cs-metric-label">Unified admin system for sales operations</div>
+        </div>
+      </div>
+
+      <div class="cs-divider" data-anim></div>
+
+      <div class="cs-section-label">Key learnings</div>
+      <h2 class="cs-section-title" data-anim style="padding-top:16px;">What I learned</h2>
+      <div class="lessons-list">
+        <div class="lesson-item">
+          <img src="eapl-crm/structure.png" class="lesson-icon" alt="">
+          <div class="lesson-content">
+            <h3>Dense workflows need clarity at every step</h3>
+            <p>Even small admin actions can affect multiple workflows, so I learned to structure information clearly, use familiar patterns, and make each next step easy to understand.</p>
+          </div>
+        </div>
+        <div class="lesson-item">
+          <img src="eapl-crm/design-system.png" class="lesson-icon" alt="">
+          <div class="lesson-content">
+            <h3>Enterprise tools are more about reducing doubt than adding features</h3>
+            <p>While working on EAPL, I realized that admins want to know exactly what they are changing, what the change will affect, and whether they are making the right decision. Small details like summaries, clear labels, status states, and review sections helped create that confidence.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" style="display:flex;align-items:center;text-decoration:none;">
+          <img src="harshita_logo.png" alt="Harshita Chauhan" style="height:16px;width:auto;opacity:0.45;display:block;">
+        </a>
+        <span class="footer-copy">© 2025 — Designed with intention.</span>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

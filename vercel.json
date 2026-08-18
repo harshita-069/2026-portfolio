@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/case-study-1", "destination": "/api/case-study?page=case-study-1" },
+    { "source": "/case-study-2", "destination": "/api/case-study?page=case-study-2" },
+    { "source": "/case-study-3", "destination": "/api/case-study?page=case-study-3" }
+  ]
+}
