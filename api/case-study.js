@@ -101,6 +101,9 @@ function sendForm(res, errorMsg, page, trackFailure) {
   button { width: 100%; padding: 11px; background: #111; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 15px; font-weight: 500; }
   button:hover { background: #333; }
   .error { color: #c0392b; font-size: 13px; margin: -8px 0 14px; }
+  .request-access { margin-top: 18px; font-size: 13px; color: #999; }
+  .request-access a { color: #111; font-weight: 600; text-decoration: none; }
+  .request-access a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -112,6 +115,10 @@ function sendForm(res, errorMsg, page, trackFailure) {
       <input type="password" name="password" placeholder="Password" autofocus required>
       <button type="submit">View case study</button>
     </form>
+    <p class="request-access">
+      Don't have a password?
+      <a href="mailto:harshita.chauhan@gmail.com?subject=Password%20request%20-%20${page}">Request access</a>
+    </p>
   </div>
   ${failureScript}
 </body>
