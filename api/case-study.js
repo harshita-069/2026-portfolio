@@ -117,7 +117,7 @@ function sendForm(res, errorMsg, page, trackFailure) {
     </form>
     <p class="request-access">
       Don't have a password?
-      <a href="mailto:harshita.chauhan@gmail.com?subject=Password%20request%20-%20${page}">Request access</a>
+      <a href="mailto:meharshitachauhan@gmail.com?subject=Password%20request%20-%20${page}">Request access</a>
     </p>
   </div>
   ${failureScript}
