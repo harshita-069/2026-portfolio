@@ -1418,6 +1418,9 @@ padding-bottom: 28px;
     color: var(--text-muted);
     margin-bottom: 12px;
   }
+#case-study-1-page .cs-section-label {
+    color: #2B4FBF;
+}
 
   .cs-text {
     font-size: 17px;
